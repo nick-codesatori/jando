@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CustomheaderComponent } from './customheader/customheader.component';
+import { CustomheaderComponent } from '../components/customheader/customheader.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { CharsheetComponent } from '../components/charsheet/charsheet.component';
 
 const appRoutes: Routes = [
   // { path: 'chargen', component: CharacterGeneratorComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   ],
   declarations: [
     AppComponent,
-    CustomheaderComponent
+    CustomheaderComponent,
+    CharsheetComponent
   ],
   bootstrap: [AppComponent]
 })
