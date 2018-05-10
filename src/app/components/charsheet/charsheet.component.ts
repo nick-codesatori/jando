@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Rpgcharacter } from '../../classes/rpgcharacter';
+import { RPGCharacter } from '../../classes/rpgcharacter';
 
 @Component({
   selector: 'app-charsheet',
@@ -7,10 +7,10 @@ import { Rpgcharacter } from '../../classes/rpgcharacter';
   styleUrls: ['./charsheet.component.css']
 })
 export class CharsheetComponent implements OnInit {
-  public character: Rpgcharacter;
+  public character: RPGCharacter;
 
   constructor() {
-    this.character = new Rpgcharacter();
+    this.character = new RPGCharacter();
     this.character.Strength_Base = 10;
     this.character.Strength_Mods = [2];
   }
