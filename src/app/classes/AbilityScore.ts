@@ -1,4 +1,4 @@
-import RPGCalcs from '../static/RPGCalcs';
+import RPGCalcs from '../default/RPGCalcs';
 
 export class AbilityScore {
     Base: number;
