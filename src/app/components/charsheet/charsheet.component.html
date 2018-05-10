@@ -1,3 +1,21 @@
-<p>
-  charsheet works!
-</p>
+<div class="card">
+  <div class="card-header bg-dark text-white">Character Sheet</div>
+  <div class="card-body">
+    Strength:
+    <ul>
+      <li>Base:
+        <input [(ngModel)]="character.Strength_Base">
+      </li>
+      <li>
+        Mods:
+        <ul>
+          <li *ngFor="let mod of character.Strength_Mods">
+            {{mod}}
+          </li>
+        </ul>
+      </li>
+      <li>Derived: {{character.Strength}}</li>
+    </ul>
+
+  </div>
+</div>
