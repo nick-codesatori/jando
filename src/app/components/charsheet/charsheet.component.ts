@@ -11,8 +11,8 @@ export class CharsheetComponent implements OnInit {
 
   constructor() {
     this.character = new RPGCharacter();
-    this.character.Strength_Base = 10;
-    this.character.Strength_Mods = [2];
+    this.character.Strength.Base = 10;
+    this.character.Strength.Mods = [2];
   }
 
   ngOnInit() {

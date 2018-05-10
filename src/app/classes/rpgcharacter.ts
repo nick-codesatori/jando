@@ -1,9 +1,10 @@
 import RPGCalcs from '../default/RPGCalcs';
+import { AbilityScore } from './AbilityScore';
 
 export class RPGCharacter {
-    Strength_Base: number;
-    Strength_Mods: number[];
-    get Strength(): number {
-        return +this.Strength_Base + this.Strength_Mods.reduce(RPGCalcs.add, 0);
+    Strength: AbilityScore;
+
+    constructor() {
+        this.Strength = new AbilityScore();
     }
 }
