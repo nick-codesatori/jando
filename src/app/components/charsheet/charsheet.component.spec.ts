@@ -8,9 +8,9 @@ describe('CharsheetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CharsheetComponent ]
+      declarations: [CharsheetComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -4,17 +4,17 @@
     Strength:
     <ul>
       <li>Base:
-        <input [(ngModel)]="character.Strength.Base">
+        <input [(ngModel)]="character.AbilityScores[0].Base">
       </li>
       <li>
         Mods:
         <ul>
-          <li *ngFor="let mod of character.Strength.Mods">
+          <li *ngFor="let mod of character.AbilityScores[0].Mods">
             {{mod}}
           </li>
         </ul>
       </li>
-      <li>Derived: {{character.Strength.Total}}</li>
+      <li>Derived: {{character.AbilityScores[0].Total}}</li>
     </ul>
   </div>
 </div>
