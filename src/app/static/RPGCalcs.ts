@@ -1,4 +1,4 @@
-export default class RPGCalcs {
+export class RPGCalcs {
     static add(a, b) {
         return a + b;
     }
